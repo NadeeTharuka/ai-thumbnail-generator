@@ -6,19 +6,19 @@ import GenerateButton from './components/GenerateButton';
 import ThumbnailPreview from './components/ThumbnailPreview';
 
 function App() {
-  const [backgroundImage, setBackgroundImage] = useState(null);
-  const [characterImages, setCharacterImages] = useState([]);
   const [thumbnailTitle, setThumbnailTitle] = useState('');
   const [additionalPrompt, setAdditionalPrompt] = useState('');
   const [generatedThumbnails, setGeneratedThumbnails] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleBackgroundUpload = (file) => {
-    setBackgroundImage(file);
+    // In a real app, you would handle the background image here
+    console.log('Background image uploaded:', file);
   };
 
   const handleCharacterUpload = (files) => {
-    setCharacterImages(files);
+    // In a real app, you would handle character images here
+    console.log('Character images uploaded:', files);
   };
 
   const handleGenerateThumbnails = async () => {
