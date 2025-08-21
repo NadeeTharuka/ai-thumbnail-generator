@@ -9,23 +9,25 @@ const TextInputSection = ({
   return (
     <div className="text-input-section">
       <div className="input-group">
-        <label htmlFor="thumbnail-title">Thumbnail Title</label>
+        <label htmlFor="thumbnail-title">Thumbnail Title *</label>
         <input
           id="thumbnail-title"
           type="text"
           value={thumbnailTitle}
           onChange={(e) => setThumbnailTitle(e.target.value)}
           placeholder="e.g., Amazing Jungle Adventure"
+          className="text-input"
         />
       </div>
       <div className="input-group">
-        <label htmlFor="additional-prompt">Additional Prompt</label>
+        <label htmlFor="additional-prompt">Additional Prompt (Optional)</label>
         <textarea
           id="additional-prompt"
           value={additionalPrompt}
           onChange={(e) => setAdditionalPrompt(e.target.value)}
-          placeholder="e.g., more attractive and character bg color remove"
+          placeholder="e.g., more attractive and character bg color remove, dramatic lighting, high quality"
           rows={3}
+          className="text-input"
         />
       </div>
     </div>
